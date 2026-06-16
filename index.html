@@ -3,36 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vídeo de Free Fire</title>
+    <title>Comunidade Free Fire</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #121212;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #141414;
             color: #ffffff;
+            margin: 0;
+            padding: 0;
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
-            min-height: 100vh;
-            margin: 0;
-            padding: 20px;
         }
 
-        h1 {
-            color: #ff6a00;
-            margin-bottom: 20px;
+        header {
+            background-color: #ff6a00;
+            width: 100%;
+            padding: 20px 0;
             text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
         }
 
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #ffffff;
+        }
+
+        main {
+            max-width: 800px;
+            width: 90%;
+            margin: 40px auto;
+            background-color: #1f1f1f;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .conteudo-texto {
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+
+        .conteudo-texto h2 {
+            color: #ff6a00;
+            border-bottom: 2px solid #ff6a00;
+            padding-bottom: 10px;
+        }
+
+        /* Container responsivo para o vídeo (Proporção 16:9) */
         .video-container {
             position: relative;
             width: 100%;
-            max-width: 700px;
-            padding-bottom: 56.25%; /* Proporção 16:9 */
+            padding-bottom: 56.25%; 
             height: 0;
             overflow: hidden;
-            border-radius: 10px;
-            box-shadow: 0px 4px 15px rgba(255, 106, 0, 0.3);
+            border-radius: 6px;
+            box-shadow: 0 4px 12px rgba(255, 106, 0, 0.2);
         }
 
         .video-container iframe {
@@ -43,21 +72,46 @@
             height: 100%;
             border: 0;
         }
+
+        footer {
+            margin-top: auto;
+            padding: 20px;
+            color: #777;
+            font-size: 0.9rem;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
 
-    <h1>Assista ao Vídeo</h1>
+    <header>
+        <h1>Portal Battle Royale</h1>
+    </header>
 
-    <div class="video-container">
-        <iframe 
-            src="https://www.youtube.com/embed/eerIrsWCdm4?si=HyQdX0QkCFbyN5we" 
-            title="YouTube video player" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-            referrerpolicy="strict-origin-when-cross-origin" 
-            allowfullscreen>
-        </iframe>
-    </div>
+    <main>
+        <section class="conteudo-texto">
+            <h2>Dicas e Conteúdos de Free Fire</h2>
+            <p>
+                Acompanhe as principais novidades, análises de atualizações, estratégias de jogo e conteúdos produzidos pela comunidade para melhorar o seu desempenho nas partidas.
+            </p>
+        </section>
+
+        <section class="video-container">
+            <iframe 
+                width="560" 
+                height="315" 
+                src="https://www.youtube.com/embed/eerIrsWCdm4?si=HyQdX0QkCFbyN5we" 
+                title="YouTube video player" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" 
+                allowfullscreen>
+            </iframe>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Página de Conteúdo Independente.</p>
+    </footer>
 
 </body>
 </html>
